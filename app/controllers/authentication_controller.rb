@@ -1,15 +1,15 @@
 class AuthenticationController < ApplicationController
 
     def login
-        @user = User.find_by ({username: params[:username]})
+        @user = User.find_by email: params[:email]
             if !@user
-                render json: {error: "User not found."}, status: :unauthorized
+                render json: {error: "Email not found."}, status: :unauthorized
             else
                 if !@user.authenticate params[:password]
                     render json: {error: "Incorrect password."}, status: :unauthorized
                 else
                     payload = {iat: Time.now.to_i, user_id: @user.id}
-                    secret = "topsecret"
+                    secret = Rails.application.secret_key_base
                     token = JWT.encode payload, secret
                     render json: {token: token}, status: :created
                 end

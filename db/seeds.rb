@@ -1,6 +1,7 @@
 User.destroy_all
 Item.destroy_all
 CartItem.destroy_all
+PurchasedItem.destroy_all
 
 gain_tool = Item.create({
     name: "FT Gain Tool", 

@@ -16,21 +16,26 @@ PurchasedItem.destroy_all
 
 lil_clip = Item.create({name: "FT Lil Clip", 
     price: 0, 
-    image_source: "https://i.ibb.co/PWfkgp8/Screen-Shot-2021-01-07-at-7-29-25-PM.png",
+    image_source: "https://i.ibb.co/3CL6RQP/Screen-Shot-2021-01-08-at-10-53-49-AM.png",
     description: "FT Lil Clip is a simple distortin tool."})
 
 rectify = Item.create({name: "FT Rectify", 
     price: 0, 
-    image_source: "https://i.ibb.co/z4WnXMQ/Screen-Shot-2021-01-07-at-7-17-02-PM.png",
+    image_source: "https://i.ibb.co/jbqMphc/Screen-Shot-2021-01-08-at-10-57-50-AM.png",
     description: "FT Rectify is a simple distortion tool."})
 
 delay = Item.create({name: "FT Delay", 
     price: 0, 
-    image_source: "https://i.ibb.co/2S4Yk1N/Screen-Shot-2021-01-07-at-7-43-50-PM.png",
+    image_source: "https://i.ibb.co/5hmtgdd/Screen-Shot-2021-01-08-at-10-53-24-AM.png",
     description: "FT Delay is a classic delay effect with pitch modulation that stores an incoming signal
     in a circular buffer and plays it back after a desired amount of time."})
 
 waveshaper = Item.create({name: "FT Waveshaper", 
     price: 0, 
-    image_source: "https://i.ibb.co/pK7hg2k/Screen-Shot-2021-01-07-at-6-50-28-PM.png",
+    image_source: "https://i.ibb.co/N93kXgh/Screen-Shot-2021-01-08-at-10-54-31-AM.png",
     description: "FT Waveshaper is a waveshaper distortion plugin that applies an arctangent function to the incoming signal."}) 
+
+flanger = Item.create({name: "FT Chorus/Flanger", 
+    price: 0, 
+    image_source: "https://i.ibb.co/vj61H4T/Screen-Shot-2021-01-08-at-10-53-05-AM.png",
+    description: "FT Chorus/Flanger is a chorus plugin that also has the ability to decrease the delay times to create a flanger effect."}) 
